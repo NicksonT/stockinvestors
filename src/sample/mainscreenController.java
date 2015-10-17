@@ -1,0 +1,92 @@
+package sample;
+
+import com.jaunt.JauntException;
+import javafx.animation.Animation;
+import javafx.animation.KeyFrame;
+import javafx.animation.Timeline;
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.layout.VBox;
+import javafx.stage.Stage;
+import javafx.util.Duration;
+
+import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
+import javafx.scene.control.Label;
+import sample.model.MainScreen;
+import sample.model.User;
+import sample.model.WebScraper;
+
+import java.io.IOException;
+import java.net.URL;
+import java.util.List;
+import java.util.ResourceBundle;
+
+
+public class mainscreenController implements Initializable {
+
+    @FXML
+    private Label london;
+    @FXML
+    private Label newYork;
+    @FXML
+    private Label tokyo;
+    @FXML
+    private Label news;
+    @FXML
+    private Label name;
+    @FXML
+    private Label money;
+    @FXML
+    private VBox rightPane;
+
+
+    @Override
+    public void initialize(URL url, ResourceBundle rb) {
+        User user = MainScreen.getUser();
+        name.setText(user.getName());
+        money.setText("Balance: " +user.getBalance() +"GBP");
+        String londonTime = MainScreen.getTime("Europe/London");
+        String nyTime = MainScreen.getTime("America/New_York");
+        String tokyoTime = MainScreen.getTime("Asia/Tokyo");
+        try {
+            List<String> bloomberg = (WebScraper.getNewsHeadlines("bloomberg"));
+            news.setText(bloomberg.get(1));
+        }
+        catch (JauntException e) {
+        }
+
+        london.setText(london.getText() + londonTime);
+        newYork.setText(newYork.getText() + nyTime);
+        tokyo.setText(tokyo.getText() + tokyoTime);
+
+        Timeline timeline = new Timeline(
+                new KeyFrame(Duration.seconds(1),
+                new EventHandler<ActionEvent>() {
+                    @Override
+                    public void handle(ActionEvent actionEvent) {
+                        String londonTime = MainScreen.getTime("Europe/London");
+                        String nyTime = MainScreen.getTime("America/New_York");
+                        String tokyoTime = MainScreen.getTime("Asia/Tokyo");
+                        london.setText("Time in London: " + londonTime);
+                        newYork.setText("Time in New York: " + nyTime);
+                        tokyo.setText("Time in Tokyo: " + tokyoTime);
+                        //news.setText();
+                    }
+                }));
+        timeline.setCycleCount(Animation.INDEFINITE);
+        timeline.play();
+
+    }
+
+    @FXML
+    private void handleNYSEButtonAction(ActionEvent event) throws IOException {
+        rightPane.getChildren().clear();
+        rightPane.getChildren().add(FXMLLoader.load(getClass().getResource("NYSEPanel.fxml")));
+
+
+        }
+}
