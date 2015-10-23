@@ -6,16 +6,12 @@ import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
-import javafx.scene.layout.VBox;
-import javafx.stage.Stage;
-import javafx.util.Duration;
-
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
+import javafx.scene.layout.VBox;
+import javafx.util.Duration;
 import sample.model.MainScreen;
 import sample.model.User;
 import sample.model.WebScraper;
@@ -89,4 +85,20 @@ public class mainscreenController implements Initializable {
 
 
         }
+
+    @FXML
+    private void handleLSEButtonAction(ActionEvent event) throws IOException {
+        rightPane.getChildren().clear();
+        rightPane.getChildren().add(FXMLLoader.load(getClass().getResource("LSEPanel.fxml")));
+
+
+    }
+
+    @FXML
+    private void handleJPXButtonAction(ActionEvent event) throws IOException {
+        rightPane.getChildren().clear();
+        rightPane.getChildren().add(FXMLLoader.load(getClass().getResource("JPXPanel.fxml")));
+
+
+    }
 }

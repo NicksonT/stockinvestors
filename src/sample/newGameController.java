@@ -9,10 +9,8 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
-import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import sample.model.MainScreen;
-import sample.model.User;
 
 import java.io.IOException;
 
@@ -32,7 +30,7 @@ public class newGameController {
             Stage stage;
             Parent root;
             String username = userid.getText();
-            MainScreen.createUser(username);
+            new MainScreen(username);
             stage = (Stage) submit.getScene().getWindow();
             root = FXMLLoader.load(getClass().getResource("mainscreen.fxml"));
             Scene scene = new Scene(root);

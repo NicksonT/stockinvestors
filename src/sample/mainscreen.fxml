@@ -1,22 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.image.*?>
-<?import java.net.*?>
-<?import javafx.geometry.*?>
-<?import javafx.scene.text.*?>
-<?import java.lang.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
-<?import javafx.scene.layout.BorderPane?>
-<?import javafx.scene.layout.HBox?>
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.text.Text?>
 <?import javafx.geometry.Insets?>
-<?import java.net.URL?>
-<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.control.*?>
 <?import javafx.scene.image.Image?>
-
-<BorderPane prefHeight="511.0" prefWidth="697.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.mainscreenController">
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Text?>
+<?import java.net.URL?>
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="511.0" prefWidth="697.0" xmlns="http://javafx.com/javafx/8"
+            fx:controller="sample.mainscreenController">
     <top>
         <StackPane fx:id="topbox" prefHeight="88.0" prefWidth="697.0">
             <padding><Insets bottom="15" left="12" right="12" top="15" /></padding>
@@ -42,14 +34,14 @@
             <padding><Insets bottom="15" right="12" top="15" /></padding>
            <children>
                <Button fx:id="NYSEButton" onAction="#handleNYSEButtonAction">New York Stock Exchange</Button>
-               <Button>London Stock Exchange</Button>
-               <Button>Japan Exchange Group</Button>
+               <Button fx:id="LSEButton" onAction="#handleLSEButtonAction">London Stock Exchange</Button>
+               <Button fx:id="JPXButton" onAction="#handleJPXButtonAction">Japan Exchange Group</Button>
            </children>
         </VBox>
 
     </left>
     <center>
-        <Text fx:id="stocksheld" text="Stocks held:" textAlignment="CENTER" BorderPane.alignment="TOP_CENTER" />
+        <Text fx:id="stocksheld" text="Stocks held" textAlignment="CENTER" BorderPane.alignment="TOP_CENTER"/>
     </center>
     <right>
         <VBox fx:id="rightPane" maxHeight="511.0" maxWidth="235.0" minHeight="511.0" minWidth="235.0">

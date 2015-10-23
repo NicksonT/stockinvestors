@@ -1,24 +1,18 @@
 package sample;
 
-import javafx.animation.Animation;
-import javafx.animation.KeyFrame;
-import javafx.animation.Timeline;
 import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
 import javafx.fxml.FXML;
-import javafx.fxml.Initializable;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
-import javafx.util.Duration;
-import sample.model.MainScreen;
-import sample.model.StockInfo;
-
+import javafx.stage.Stage;
 
 import java.io.IOException;
-import java.net.URL;
-import java.util.ResourceBundle;
 
-public class StockInfoController implements Initializable {
+public class StockInfoController {
     @FXML
     private Label mainmessage;
 
@@ -26,27 +20,24 @@ public class StockInfoController implements Initializable {
     private TextField stockname;
 
     @FXML
+    private Button submit;
+
+    @FXML
     private void handleButtonAction(ActionEvent event) throws IOException {
-
-    }
-    @Override
-    public void initialize(URL url, ResourceBundle rb) {
-
-        Timeline timeline = new Timeline(
-                new KeyFrame(Duration.seconds(5),
-                        new EventHandler<ActionEvent>() {
-                            @Override
-                            public void handle(ActionEvent actionEvent) {
-
-                                StockInfo.printStock("AAPL");
-                            }
-                        }));
-        timeline.setCycleCount(Animation.INDEFINITE);
-        timeline.play();
-
+        String username = stockname.getText();
+        Stage stage;
+        Parent root;
+        //get reference to the button's stage
+        stage = (Stage) submit.getScene().getWindow();
+        //load up OTHER FXML document
+        root = FXMLLoader.load(getClass().getResource("QuoteInfo.fxml"));
+        //create a new scene with root and set the stage
+        Scene scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
     }
 
-    }
+}
 
 
 
