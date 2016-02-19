@@ -1,4 +1,4 @@
-package sample.model;
+package stockinvestor.model;
 
 import com.jaunt.Element;
 import com.jaunt.Elements;

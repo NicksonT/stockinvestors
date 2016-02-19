@@ -1,4 +1,4 @@
-package sample;
+package stockinvestor;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -14,7 +14,7 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("fxml/MainMenu.fxml"));
         primaryStage.setTitle("Nick's Stock Investor Simulation");
         primaryStage.setScene(new Scene(root));
         primaryStage.show();

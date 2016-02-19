@@ -1,4 +1,4 @@
-package sample;
+package stockinvestor.controller;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -30,7 +30,7 @@ public class StockInfoController {
         //get reference to the button's stage
         stage = (Stage) submit.getScene().getWindow();
         //load up OTHER FXML document
-        root = FXMLLoader.load(getClass().getResource("QuoteInfo.fxml"));
+        root = FXMLLoader.load(getClass().getResource("fxml/QuoteInfo.fxml"));
         //create a new scene with root and set the stage
         Scene scene = new Scene(root);
         stage.setScene(scene);

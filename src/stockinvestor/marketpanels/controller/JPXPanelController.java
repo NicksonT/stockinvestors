@@ -1,4 +1,4 @@
-package sample;
+package stockinvestor.marketpanels.controller;
 
 
 import javafx.animation.Animation;
@@ -16,7 +16,7 @@ import javafx.scene.control.Label;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 import javafx.util.Duration;
-import sample.model.MainScreen;
+import stockinvestor.model.MainScreen;
 
 import java.io.IOException;
 import java.net.URL;

@@ -1,4 +1,4 @@
-package sample.model;
+package stockinvestor.model;
 
 import yahoofinance.Stock;
 import yahoofinance.YahooFinance;

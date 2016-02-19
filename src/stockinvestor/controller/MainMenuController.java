@@ -1,16 +1,15 @@
-package sample;
+package stockinvestor.controller;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
-import javafx.fxml.Initializable;
 import javafx.scene.*;
 import javafx.scene.control.Button;
 import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class Controller {
+public class MainMenuController {
     @FXML
     private Button btn1;
 
@@ -22,7 +21,7 @@ public class Controller {
             //get reference to the button's stage
             stage = (Stage) btn1.getScene().getWindow();
             //load up OTHER FXML document
-            root = FXMLLoader.load(getClass().getResource("newgame.fxml"));
+            root = FXMLLoader.load(getClass().getResource("../fxml/newgame.fxml"));
         } else {
             stage = (Stage) btn1.getScene().getWindow();
             root = FXMLLoader.load(getClass().getResource("FXMLDocument.fxml"));

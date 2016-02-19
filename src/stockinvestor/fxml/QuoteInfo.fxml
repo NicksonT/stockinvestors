@@ -7,7 +7,7 @@
 <?import javafx.scene.text.Text?>
 <?import java.net.URL?>
 <BorderPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="244" prefWidth="358" xmlns="http://javafx.com/javafx/8"
-            fx:controller="sample.quoteInfoController">
+            fx:controller="stockinvestor.controller.quoteInfoController">
     <top>
         <StackPane fx:id="topbox" prefHeight="88.0" prefWidth="358">
             <padding>
@@ -40,6 +40,6 @@
     <bottom>
     </bottom>
     <stylesheets>
-        <URL value="@mainscreen.css"/>
+        <URL value="@../css/mainscreen.css"/>
     </stylesheets>
 </BorderPane>

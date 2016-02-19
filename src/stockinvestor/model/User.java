@@ -1,4 +1,4 @@
-package sample.model;
+package stockinvestor.model;
 
 /**
  * Created by nick on 16/08/15.

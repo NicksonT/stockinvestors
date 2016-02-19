@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.*?>
 <?import java.net.URL?>
 <GridPane xmlns:fx="http://javafx.com/fxml/1" hgap="50" vgap="10" xmlns="http://javafx.com/javafx/8"
-          fx:controller="sample.StockInfoController">
+          fx:controller="stockinvestor.controller.StockInfoController">
     <padding>
         <Insets bottom="25" left="25" right="25" top="25" />
     </padding>
@@ -22,6 +22,6 @@
 
 
     <stylesheets>
-        <URL value="@sample.css" />
+        <URL value="@../css/MainMenu.css" />
     </stylesheets>
 </GridPane>

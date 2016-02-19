@@ -1,4 +1,4 @@
-package sample;
+package stockinvestor.controller;
 
 
 import javafx.event.ActionEvent;
@@ -10,7 +10,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
-import sample.model.MainScreen;
+import stockinvestor.model.MainScreen;
 
 import java.io.IOException;
 
@@ -32,7 +32,7 @@ public class newGameController {
             String username = userid.getText();
             new MainScreen(username);
             stage = (Stage) submit.getScene().getWindow();
-            root = FXMLLoader.load(getClass().getResource("mainscreen.fxml"));
+            root = FXMLLoader.load(getClass().getResource("../fxml/mainscreen.fxml"));
             Scene scene = new Scene(root);
             stage.setScene(scene);
             stage.show();

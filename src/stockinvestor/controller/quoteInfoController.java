@@ -1,9 +1,9 @@
-package sample;
+package stockinvestor.controller;
 
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
-import sample.model.StockInfo;
+import stockinvestor.model.StockInfo;
 
 import java.net.URL;
 import java.util.ResourceBundle;

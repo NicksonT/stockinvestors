@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import java.net.URL?>
 <BorderPane xmlns:fx="http://javafx.com/fxml/1" fx:id="borderPanel" xmlns="http://javafx.com/javafx/8"
-            fx:controller="sample.LSEPanelController">
+            fx:controller="stockinvestor.marketpanels.controller.JPXPanelController">
     <center>
         <StackPane fx:id="content"/>
         <VBox alignment="BASELINE_CENTER" prefHeight="511.0" prefWidth="235.0">
@@ -17,18 +17,18 @@
                 <ImageView fx:id="imageView" fitHeight="119.0" fitWidth="119.0" layoutX="61.0" layoutY="83.0"
                            pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@images/lse.png"/>
+                        <Image url="@../../images/jpx.png"/>
                     </image>
                 </ImageView>
-                <Label fx:id="heading" text="London Stock Exchange"/>
-                <Label fx:id="london" text="Local Time:"/>
-                <Label fx:id="londonStatus" text="Status: CLOSED"/>
+                <Label fx:id="heading" text="Japan Stock Exchange"/>
+                <Label fx:id="tokyo" text="Local Time:"/>
+                <Label fx:id="JPXStatus" text="Status: CLOSED"/>
 
                 <Button fx:id="lookupquote" onAction="#handleButtonAction">Look up Quote</Button>
             </children>
         </VBox>
     </center>
     <stylesheets>
-        <URL value="@MarketPanels.css"/>
+        <URL value="@../css/MarketPanels.css"/>
     </stylesheets>
 </BorderPane>

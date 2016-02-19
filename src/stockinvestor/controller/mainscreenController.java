@@ -1,4 +1,4 @@
-package sample;
+package stockinvestor.controller;
 
 import com.jaunt.JauntException;
 import javafx.animation.Animation;
@@ -12,9 +12,9 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
 import javafx.scene.layout.VBox;
 import javafx.util.Duration;
-import sample.model.MainScreen;
-import sample.model.User;
-import sample.model.WebScraper;
+import stockinvestor.model.MainScreen;
+import stockinvestor.model.User;
+import stockinvestor.model.WebScraper;
 
 import java.io.IOException;
 import java.net.URL;
@@ -81,7 +81,7 @@ public class mainscreenController implements Initializable {
     @FXML
     private void handleNYSEButtonAction(ActionEvent event) throws IOException {
         rightPane.getChildren().clear();
-        rightPane.getChildren().add(FXMLLoader.load(getClass().getResource("NYSEPanel.fxml")));
+        rightPane.getChildren().add(FXMLLoader.load(getClass().getResource("../marketpanels/fxml/NYSEPanel.fxml")));
 
 
         }
@@ -89,7 +89,7 @@ public class mainscreenController implements Initializable {
     @FXML
     private void handleLSEButtonAction(ActionEvent event) throws IOException {
         rightPane.getChildren().clear();
-        rightPane.getChildren().add(FXMLLoader.load(getClass().getResource("LSEPanel.fxml")));
+        rightPane.getChildren().add(FXMLLoader.load(getClass().getResource("../marketpanels/fxml/LSEPanel.fxml")));
 
 
     }
@@ -97,7 +97,7 @@ public class mainscreenController implements Initializable {
     @FXML
     private void handleJPXButtonAction(ActionEvent event) throws IOException {
         rightPane.getChildren().clear();
-        rightPane.getChildren().add(FXMLLoader.load(getClass().getResource("JPXPanel.fxml")));
+        rightPane.getChildren().add(FXMLLoader.load(getClass().getResource("../marketpanels/fxml/JPXPanel.fxml")));
 
 
     }

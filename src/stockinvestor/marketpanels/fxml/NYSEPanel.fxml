@@ -9,14 +9,14 @@
 <?import javafx.scene.layout.VBox?>
 <?import java.net.URL?>
 <BorderPane xmlns:fx="http://javafx.com/fxml/1" fx:id="borderPanel" xmlns="http://javafx.com/javafx/8"
-            fx:controller="sample.NYSEPanelController">
+            fx:controller="stockinvestor.marketpanels.controller.NYSEPanelController">
     <center>
         <StackPane fx:id="content" />
         <VBox alignment="BASELINE_CENTER" prefHeight="511.0" prefWidth="235.0">
            <children>
                <ImageView fx:id="imageView" fitHeight="119.0" fitWidth="119.0" layoutX="61.0" layoutY="83.0" pickOnBounds="true" preserveRatio="true">
                    <image>
-                       <Image url="@images/nyse.png" />
+                       <Image url="@../../images/nyse.png" />
                    </image>
                </ImageView>
                <Label fx:id="heading" text="New York Stock Exchange" />
@@ -28,6 +28,6 @@
         </VBox>
     </center>
     <stylesheets>
-        <URL value="@MarketPanels.css" />
+        <URL value="@../css/MarketPanels.css" />
     </stylesheets>
 </BorderPane>
