@@ -9,9 +9,11 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 import stockinvestor.model.MainScreen;
 
+import java.io.File;
 import java.io.IOException;
 
 
@@ -32,6 +34,11 @@ public class newGameController {
             String username = userid.getText();
             new MainScreen(username);
             stage = (Stage) submit.getScene().getWindow();
+            File newSaveFile = saveGame(username,stage);
+            while(newSaveFile == null)
+            {
+                newSaveFile = saveGame(username,stage);
+            }
             root = FXMLLoader.load(getClass().getResource("../fxml/mainscreen.fxml"));
             Scene scene = new Scene(root);
             stage.setScene(scene);
@@ -43,5 +50,15 @@ public class newGameController {
 
         }
 
+    }
+    private File saveGame(String username, Stage stage)
+    {
+        FileChooser fileChooser = new FileChooser();
+        fileChooser.setTitle("New Game");
+        fileChooser.getExtensionFilters().add(
+                new FileChooser.ExtensionFilter("Database file", "*.db"));
+        fileChooser.setInitialFileName(username+"'s Stock Portfolio - Stock Investor Simulation.db");
+        File file = fileChooser.showSaveDialog(stage);
+        return file;
     }
 }

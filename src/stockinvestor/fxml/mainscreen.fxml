@@ -33,9 +33,7 @@
         <VBox fx:id="marketspanel" prefHeight="403.0" prefWidth="179.0">
             <padding><Insets bottom="15" right="12" top="15" /></padding>
            <children>
-               <Button fx:id="NYSEButton" onAction="#handleNYSEButtonAction">New York Stock Exchange</Button>
-               <Button fx:id="LSEButton" onAction="#handleLSEButtonAction">London Stock Exchange</Button>
-               <Button fx:id="JPXButton" onAction="#handleJPXButtonAction">Japan Exchange Group</Button>
+               <Button fx:id="BuyButton" onAction="#buyButton">Buy Stock</Button>
            </children>
         </VBox>
 

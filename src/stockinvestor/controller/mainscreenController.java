@@ -79,7 +79,7 @@ public class mainscreenController implements Initializable {
     }
 
     @FXML
-    private void handleNYSEButtonAction(ActionEvent event) throws IOException {
+    private void buyButton(ActionEvent event) throws IOException {
         rightPane.getChildren().clear();
         rightPane.getChildren().add(FXMLLoader.load(getClass().getResource("../marketpanels/fxml/NYSEPanel.fxml")));
 
@@ -87,17 +87,9 @@ public class mainscreenController implements Initializable {
         }
 
     @FXML
-    private void handleLSEButtonAction(ActionEvent event) throws IOException {
+    private void sellStockAction(ActionEvent event) throws IOException {
         rightPane.getChildren().clear();
         rightPane.getChildren().add(FXMLLoader.load(getClass().getResource("../marketpanels/fxml/LSEPanel.fxml")));
-
-
-    }
-
-    @FXML
-    private void handleJPXButtonAction(ActionEvent event) throws IOException {
-        rightPane.getChildren().clear();
-        rightPane.getChildren().add(FXMLLoader.load(getClass().getResource("../marketpanels/fxml/JPXPanel.fxml")));
 
 
     }
