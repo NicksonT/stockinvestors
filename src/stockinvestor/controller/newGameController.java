@@ -11,6 +11,7 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
+import sql.Database;
 import stockinvestor.model.MainScreen;
 
 import java.io.File;
@@ -39,6 +40,8 @@ public class newGameController {
             {
                 newSaveFile = saveGame(username,stage);
             }
+            sql.Database currentGame = new Database(newSaveFile.getName());
+            currentGame.insert("'"+username+"',20000","USER");
             root = FXMLLoader.load(getClass().getResource("../fxml/mainscreen.fxml"));
             Scene scene = new Scene(root);
             stage.setScene(scene);
