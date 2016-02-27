@@ -13,7 +13,7 @@ import javafx.scene.control.Label;
 import javafx.scene.layout.VBox;
 import javafx.util.Duration;
 import stockinvestor.model.MainScreen;
-import stockinvestor.model.User;
+import stockinvestor.model.Singleton;
 import stockinvestor.model.WebScraper;
 
 import java.io.IOException;
@@ -42,9 +42,8 @@ public class mainscreenController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        User user = MainScreen.getUser();
-        name.setText(user.getName());
-        money.setText("Balance: " +user.getBalance() +"GBP");
+        name.setText(Singleton.getInstance().currentDatabase().getName());
+        money.setText("Balance: " +Singleton.getInstance().currentDatabase().getCash() +"GBP");
         String londonTime = MainScreen.getTime("Europe/London");
         String nyTime = MainScreen.getTime("America/New_York");
         String tokyoTime = MainScreen.getTime("Asia/Tokyo");

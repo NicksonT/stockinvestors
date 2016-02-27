@@ -8,12 +8,15 @@ import java.sql.Statement;
 
 public class Database {
     private Connection saveGame;
-    public Database(String filename)
+    public Database()
+    {
+
+    }
+    public void initDatabase(String filename)
     {
         try {
             Class.forName("org.sqlite.JDBC");
             saveGame = DriverManager.getConnection("jdbc:sqlite:" + filename +  "");
-            createTables();
         }
         catch(Exception e){
             System.err.println(e.getClass().getName());
@@ -60,5 +63,40 @@ public class Database {
             System.out.println("Error inserting values for save game");
         }
 
+    }
+    public String getName()
+    {
+        Statement stmt = null;
+        String user ="User";
+        try {
+            stmt = saveGame.createStatement();
+            String sql = "SELECT NAME FROM USER;";
+            ResultSet rs = stmt.executeQuery(sql);
+            rs.next();
+            user = rs.getString("NAME");
+            stmt.close();
+        } catch (SQLException ex) {
+            ex.printStackTrace();
+            System.out.println("Error getting the name for save game");
+        }
+        return user;
+    }
+
+    public double getCash()
+    {
+        Statement stmt = null;
+        double cash =20000;
+        try {
+            stmt = saveGame.createStatement();
+            String sql = "SELECT CASH FROM USER;";
+            ResultSet rs = stmt.executeQuery(sql);
+            rs.next();
+            cash = rs.getDouble("CASH");
+            stmt.close();
+        } catch (SQLException ex) {
+            ex.printStackTrace();
+            System.out.println("Error getting the name for save game");
+        }
+        return cash;
     }
 }

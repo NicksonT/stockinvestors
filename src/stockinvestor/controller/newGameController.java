@@ -13,6 +13,7 @@ import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 import sql.Database;
 import stockinvestor.model.MainScreen;
+import stockinvestor.model.Singleton;
 
 import java.io.File;
 import java.io.IOException;
@@ -33,15 +34,19 @@ public class newGameController {
             Stage stage;
             Parent root;
             String username = userid.getText();
-            new MainScreen(username);
             stage = (Stage) submit.getScene().getWindow();
             File newSaveFile = saveGame(username,stage);
-            while(newSaveFile == null)
+            if(newSaveFile == null)
             {
-                newSaveFile = saveGame(username,stage);
+                root = FXMLLoader.load(getClass().getResource("../fxml/MainMenu.fxml"));
+                Scene scene = new Scene(root);
+                stage.setScene(scene);
+                stage.show();
             }
-            sql.Database currentGame = new Database(newSaveFile.getName());
-            currentGame.insert("'"+username+"',20000","USER");
+
+            Singleton.getInstance().currentDatabase().initDatabase(newSaveFile.getName());
+            Singleton.getInstance().currentDatabase().createTables();
+            Singleton.getInstance().currentDatabase().insert("'"+username+"',20000","USER");
             root = FXMLLoader.load(getClass().getResource("../fxml/mainscreen.fxml"));
             Scene scene = new Scene(root);
             stage.setScene(scene);

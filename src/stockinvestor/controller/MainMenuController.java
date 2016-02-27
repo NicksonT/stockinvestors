@@ -7,7 +7,9 @@ import javafx.scene.*;
 import javafx.scene.control.Button;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
+import stockinvestor.model.Singleton;
 
+import java.io.File;
 import java.io.IOException;
 
 public class MainMenuController {
@@ -38,7 +40,21 @@ public class MainMenuController {
         stage = (Stage) loadGame.getScene().getWindow();
         FileChooser fileChooser = new FileChooser();
         fileChooser.setTitle("Open Database File");
-        fileChooser.showOpenDialog(stage);
+        File saveFile = fileChooser.showOpenDialog(stage);
+        if(saveFile == null)
+        {
+            root = FXMLLoader.load(getClass().getResource("../fxml/MainMenu.fxml"));
+            Scene scene = new Scene(root);
+            stage.setScene(scene);
+            stage.show();
+        }
+        else {
+            Singleton.getInstance().currentDatabase().initDatabase(saveFile.getName());
+            root = FXMLLoader.load(getClass().getResource("../fxml/mainscreen.fxml"));
+            Scene scene = new Scene(root);
+            stage.setScene(scene);
+            stage.show();
+        }
 
     }
 }
