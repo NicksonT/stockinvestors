@@ -43,7 +43,7 @@ public class mainscreenController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         name.setText(Singleton.getInstance().currentDatabase().getName());
-        money.setText("Balance: " +Singleton.getInstance().currentDatabase().getCash() +"GBP");
+        money.setText("Balance: " +Singleton.getInstance().currentDatabase().getCash() +"USD");
         String londonTime = MainScreen.getTime("Europe/London");
         String nyTime = MainScreen.getTime("America/New_York");
         String tokyoTime = MainScreen.getTime("Asia/Tokyo");
@@ -63,15 +63,16 @@ public class mainscreenController implements Initializable {
                 new EventHandler<ActionEvent>() {
                     @Override
                     public void handle(ActionEvent actionEvent) {
+                        money.setText("Balance: " +Singleton.getInstance().currentDatabase().getCash() +"USD");
                         String londonTime = MainScreen.getTime("Europe/London");
                         String nyTime = MainScreen.getTime("America/New_York");
                         String tokyoTime = MainScreen.getTime("Asia/Tokyo");
                         london.setText("Time in London: " + londonTime);
                         newYork.setText("Time in New York: " + nyTime);
                         tokyo.setText("Time in Tokyo: " + tokyoTime);
-                        //news.setText();
                     }
-                }));
+                })
+        );
         timeline.setCycleCount(Animation.INDEFINITE);
         timeline.play();
 
@@ -80,7 +81,7 @@ public class mainscreenController implements Initializable {
     @FXML
     private void buyButton(ActionEvent event) throws IOException {
         rightPane.getChildren().clear();
-        rightPane.getChildren().add(FXMLLoader.load(getClass().getResource("../marketpanels/fxml/NYSEPanel.fxml")));
+        rightPane.getChildren().add(FXMLLoader.load(getClass().getResource("../fxml/SearchPanel.fxml")));
 
 
         }

@@ -1,14 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.net.URL?>
 <?import javafx.geometry.Insets?>
-<?import javafx.scene.control.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
-<?import javafx.scene.layout.*?>
-<?import javafx.scene.text.Text?>
-<?import java.net.URL?>
-<BorderPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="511.0" prefWidth="697.0" xmlns="http://javafx.com/javafx/8"
-            fx:controller="stockinvestor.controller.mainscreenController">
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<FlowPane prefHeight="511.0" prefWidth="697.0" xmlns="http://javafx.com/javafx/null" xmlns:fx="http://javafx.com/fxml/1" fx:controller="stockinvestor.controller.mainscreenController">
+
+<BorderPane>
     <top>
         <StackPane fx:id="topbox" prefHeight="88.0" prefWidth="697.0">
             <padding><Insets bottom="15" left="12" right="12" top="15" /></padding>
@@ -26,23 +34,32 @@
                        <Label fx:id="money" text="Money: " textAlignment="RIGHT" />
                    </children>
                </VBox>
+
            </children>
         </StackPane>
     </top>
     <left>
-        <VBox fx:id="marketspanel" prefHeight="403.0" prefWidth="179.0">
+        <VBox fx:id="marketspanel" prefHeight="511.0" prefWidth="152.0">
             <padding><Insets bottom="15" right="12" top="15" /></padding>
            <children>
-               <Button fx:id="BuyButton" onAction="#buyButton">Buy Stock</Button>
+               <Button fx:id="BuyButton" onAction="#buyButton">Search</Button>
            </children>
         </VBox>
 
     </left>
     <center>
-        <Text fx:id="stocksheld" text="Stocks held" textAlignment="CENTER" BorderPane.alignment="TOP_CENTER"/>
+        <TableView>
+            <TableColumn />
+            <columns>
+               <TableColumn prefWidth="75.0" text=" Ticker" />
+                <TableColumn prefWidth="106.0" text="Stock Name" />
+               <TableColumn prefWidth="65.0" text="Quantity" />
+               <TableColumn prefWidth="96.0" text="Current Price" />
+            </columns>
+        </TableView>
     </center>
     <right>
-        <VBox fx:id="rightPane" maxHeight="511.0" maxWidth="235.0" minHeight="511.0" minWidth="235.0">
+        <VBox fx:id="rightPane" maxHeight="511.0" maxWidth="235.0" minHeight="511.0" minWidth="202.0" prefHeight="511.0" prefWidth="202.0">
            <children>
                <Label text="Click on a button on the/ left to buy/sell stocks on that exchange" textAlignment="CENTER" wrapText="true" />
            </children>
@@ -65,3 +82,4 @@
         <URL value="@../css/mainscreen.css" />
     </stylesheets>
 </BorderPane>
+</FlowPane>

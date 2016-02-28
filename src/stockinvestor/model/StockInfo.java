@@ -15,24 +15,33 @@ public class StockInfo {
     private static Stock stock;
     private String stockName;
 
+    public StockInfo()
+    {
+        stockName = "";
+    }
     public StockInfo(String StockName) {
-        this.stockName = stockName;
+        this.stockName = StockName;
         try {
-            stock = YahooFinance.get(StockName);
+            stock = YahooFinance.get(stockName);
         } catch (IOException e) {
             JOptionPane.showMessageDialog(null, "Internet connection, please try again later");
         }
 
     }
 
-    public static String getStockName() {
+    public String getStockName() {
         return stock.getName();
     }
-        public static void printStock(String StockName) {
+    public String getStockTicker() {return stock.getSymbol();}
+    public Double getStockPrice() {
+        return stock.getQuote().getPrice().doubleValue();
+
+    }
+    public void printStock() {
             try
             {
 
-                Stock stock = YahooFinance.get(StockName);
+                Stock stock = YahooFinance.get(stockName);
 
                 BigDecimal price = stock.getQuote().getPrice();
                 BigDecimal change = stock.getQuote().getChangeInPercent();

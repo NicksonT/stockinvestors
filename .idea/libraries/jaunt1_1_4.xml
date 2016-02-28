@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="jaunt1.1.4">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/jaunt1.1.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/sqlite-jdbc-3.8.11.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/lib/sqlite-jdbc-3.8.11.2.jar!/" />
+    </SOURCES>
+  </library>
+</component>

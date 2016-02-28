@@ -12,7 +12,9 @@ public class Singleton {
         return instance;
     }
     private sql.Database database = new Database();
-
+    private StockInfo stockInfo = new StockInfo();
+    public StockInfo currentStockInfo() { return stockInfo;}
+    public void setCurrentStockInfo(StockInfo stockInfo){this.stockInfo = stockInfo;}
     public sql.Database currentDatabase() {
         return database;
     }

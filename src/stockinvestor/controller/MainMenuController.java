@@ -40,6 +40,8 @@ public class MainMenuController {
         stage = (Stage) loadGame.getScene().getWindow();
         FileChooser fileChooser = new FileChooser();
         fileChooser.setTitle("Open Database File");
+        fileChooser.getExtensionFilters().add(
+                new FileChooser.ExtensionFilter("Database file", "*.db"));
         File saveFile = fileChooser.showOpenDialog(stage);
         if(saveFile == null)
         {
@@ -49,7 +51,7 @@ public class MainMenuController {
             stage.show();
         }
         else {
-            Singleton.getInstance().currentDatabase().initDatabase(saveFile.getName());
+            Singleton.getInstance().currentDatabase().initDatabase(saveFile.getAbsolutePath());
             root = FXMLLoader.load(getClass().getResource("../fxml/mainscreen.fxml"));
             Scene scene = new Scene(root);
             stage.setScene(scene);

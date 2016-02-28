@@ -1,14 +1,18 @@
 package stockinvestor;
 
+import com.jaunt.JauntException;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import stockinvestor.model.Singleton;
+import stockinvestor.model.WebScraper;
 
 public class Main extends Application {
 
     public static void main(String[] args) {
+
         launch(args);
     }
 

@@ -33,7 +33,7 @@ public class Database {
                     "(NAME CHAR PRIMARY KEY  NOT NULL," +
                     " CASH FLOAT             NOT NULL);" +
                     " CREATE TABLE IF NOT EXISTS PORTFOLIO " +
-                    "(ID INT PRIMARY KEY     NOT NULL," +
+                    "(STOCKTICKER VARCHAR PRIMARY KEY     NOT NULL," +
                     " COMPANYNAME VARCHAR       NOT NULL," +
                     " QUANTITY INT           NOT NULL," +
                     " CURRENTPRICE FLOAT     NOT NULL);" +
@@ -95,8 +95,77 @@ public class Database {
             stmt.close();
         } catch (SQLException ex) {
             ex.printStackTrace();
-            System.out.println("Error getting the name for save game");
+            System.out.println("Error getting the cash for save game");
         }
         return cash;
+    }
+
+    public void setCash(double cash)
+    {
+        Statement stmt = null;
+        try {
+            stmt = saveGame.createStatement();
+            String sql = "UPDATE USER SET CASH ='"+cash+"';";
+            stmt.execute(sql);
+            stmt.close();
+        } catch (SQLException ex) {
+            ex.printStackTrace();
+            System.out.println("Error getting the cash for save game");
+        }
+    }
+    public int getQuantityOfStock(String ticker)
+    {
+        Statement stmt = null;
+        int quantity = 0;
+        try {
+            stmt = saveGame.createStatement();
+            String sql = "SELECT QUANTITY FROM PORTFOLIO WHERE STOCKTICKER ='"+ticker+"';";
+            ResultSet rs = stmt.executeQuery(sql);
+            rs.next();
+            quantity = rs.getInt("QUANTITY");
+            stmt.close();
+        } catch (SQLException ex) {
+            ex.printStackTrace();
+            System.out.println("Error setting the quantity of stock for save game");
+        }
+        return quantity;
+    }
+
+    public void setQuantityOfStock(String ticker, int quantity)
+    {
+        Statement stmt = null;
+        try {
+            stmt = saveGame.createStatement();
+            String sql = "UPDATE PORTFOLIO SET QUANTITY ='"+quantity+"'WHERE STOCKTICKER ='"+ticker+"';";
+            stmt.execute(sql);
+            stmt.close();
+        } catch (SQLException ex) {
+            ex.printStackTrace();
+            System.out.println("Error setting the quantity of stock for save game");
+        }
+    }
+
+    public boolean checkIfStockInPortfolio(String stockTicker)
+    {
+        Boolean exists = false;
+        Statement stmt = null;
+        try{
+            stmt = saveGame.createStatement();
+            String sql = "SELECT * FROM PORTFOLIO WHERE STOCKTICKER ='"+stockTicker+"'";
+            ResultSet rs = stmt.executeQuery(sql);
+            if (!rs.next() ) {
+                exists = false;
+            }
+            else{
+                exists = true;
+            }
+
+        }
+        catch(SQLException ex)
+        {
+            ex.printStackTrace();
+            System.out.println("Error getting values from database");
+        }
+        return exists;
     }
 }

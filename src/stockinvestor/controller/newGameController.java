@@ -44,7 +44,7 @@ public class newGameController {
                 stage.show();
             }
 
-            Singleton.getInstance().currentDatabase().initDatabase(newSaveFile.getName());
+            Singleton.getInstance().currentDatabase().initDatabase(newSaveFile.getAbsolutePath());
             Singleton.getInstance().currentDatabase().createTables();
             Singleton.getInstance().currentDatabase().insert("'"+username+"',20000","USER");
             root = FXMLLoader.load(getClass().getResource("../fxml/mainscreen.fxml"));
