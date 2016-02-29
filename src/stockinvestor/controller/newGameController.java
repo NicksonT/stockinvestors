@@ -17,7 +17,7 @@ import java.io.File;
 import java.io.IOException;
 
 
-public class NewGameController {
+public class newGameController {
 
     @FXML
     private Label mainmessage;

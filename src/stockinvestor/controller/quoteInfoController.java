@@ -24,7 +24,7 @@ import java.util.ResourceBundle;
 /**
  * Created by Nick on 23/10/2015.
  */
-public class QuoteInfoController implements Initializable {
+public class quoteInfoController implements Initializable {
     @FXML
     private Label stockName;
     @FXML

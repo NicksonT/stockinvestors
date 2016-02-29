@@ -34,7 +34,7 @@ import java.util.List;
 import java.util.ResourceBundle;
 
 
-public class MainScreenController implements Initializable {
+public class mainscreenController implements Initializable {
 
     @FXML
     private Label london;

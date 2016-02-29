@@ -7,7 +7,7 @@
 
 
 
-<GridPane fx:controller="stockinvestor.controller.NewGameController"
+<GridPane fx:controller="stockinvestor.controller.newGameController"
           xmlns:fx="http://javafx.com/fxml"  hgap="50" vgap="10">
     <padding>
         <Insets top="25" right="25" bottom="25" left="25"/>

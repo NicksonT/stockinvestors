@@ -54,8 +54,8 @@ public class SearchPanelController implements Initializable {
 
             try {
                 FXMLLoader a =new FXMLLoader(getClass().getResource("../fxml/QuoteInfo.fxml"));
-                a.setController(new QuoteInfoController());
-                QuoteInfoController controller = a.<QuoteInfoController>getController();
+                a.setController(new quoteInfoController());
+                quoteInfoController controller = a.<quoteInfoController>getController();
                 controller.initData(textInput);
                 lowerpane.getChildren().clear();
                 lowerpane.getChildren().add(a.load());
