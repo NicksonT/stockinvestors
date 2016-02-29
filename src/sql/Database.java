@@ -153,12 +153,7 @@ public class Database {
             stmt = saveGame.createStatement();
             String sql = "SELECT * FROM PORTFOLIO WHERE STOCKTICKER ='"+stockTicker+"'";
             ResultSet rs = stmt.executeQuery(sql);
-            if (!rs.next() ) {
-                exists = false;
-            }
-            else{
-                exists = true;
-            }
+            exists = rs.next();
 
         }
         catch(SQLException ex)
@@ -167,5 +162,22 @@ public class Database {
             System.out.println("Error getting values from database");
         }
         return exists;
+    }
+
+    public ResultSet getStockData()
+    {
+        ResultSet rs = null;
+        Statement stmt = null;
+        try{
+            stmt = saveGame.createStatement();
+            String sql = "SELECT * FROM PORTFOLIO";
+            rs = stmt.executeQuery(sql);
+        }
+        catch(SQLException ex)
+        {
+            ex.printStackTrace();
+            System.out.println("Error printing stock data");
+        }
+        return rs;
     }
 }

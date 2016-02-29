@@ -3,7 +3,8 @@ package stockinvestor.controller;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
-import javafx.scene.*;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
@@ -33,6 +34,7 @@ public class MainMenuController {
             stage.show();
         }
     }
+
     @FXML
     private void handleLoadGameButtonAction(ActionEvent event) throws IOException {
         Stage stage;
@@ -43,16 +45,14 @@ public class MainMenuController {
         fileChooser.getExtensionFilters().add(
                 new FileChooser.ExtensionFilter("Database file", "*.db"));
         File saveFile = fileChooser.showOpenDialog(stage);
-        if(saveFile == null)
-        {
+        if (saveFile == null) {
             root = FXMLLoader.load(getClass().getResource("../fxml/MainMenu.fxml"));
             Scene scene = new Scene(root);
             stage.setScene(scene);
             stage.show();
-        }
-        else {
+        } else {
             Singleton.getInstance().currentDatabase().initDatabase(saveFile.getAbsolutePath());
-            root = FXMLLoader.load(getClass().getResource("../fxml/mainscreen.fxml"));
+            root = FXMLLoader.load(getClass().getResource("../fxml/MainScreen.fxml"));
             Scene scene = new Scene(root);
             stage.setScene(scene);
             stage.show();

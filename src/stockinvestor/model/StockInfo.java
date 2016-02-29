@@ -12,15 +12,12 @@ import java.math.BigDecimal;
  */
 public class StockInfo {
 
-    private static Stock stock;
-    private String stockName;
+    private Stock stock;
 
-    public StockInfo()
-    {
-        stockName = "";
+    public StockInfo() {
     }
-    public StockInfo(String StockName) {
-        this.stockName = StockName;
+
+    public StockInfo(String stockName) {
         try {
             stock = YahooFinance.get(stockName);
         } catch (IOException e) {
@@ -32,26 +29,17 @@ public class StockInfo {
     public String getStockName() {
         return stock.getName();
     }
-    public String getStockTicker() {return stock.getSymbol();}
-    public Double getStockPrice() {
-        return stock.getQuote().getPrice().doubleValue();
 
+    public String getStockTicker() {
+        return stock.getSymbol();
     }
-    public void printStock() {
-            try
-            {
 
-                Stock stock = YahooFinance.get(stockName);
+    public Double getStockPrice() {
+        Double price = 0.0;
+           price = stock.getQuote().getPrice().doubleValue();
+        return price;
+    }
 
-                BigDecimal price = stock.getQuote().getPrice();
-                BigDecimal change = stock.getQuote().getChangeInPercent();
-                BigDecimal peg = stock.getStats().getPeg();
-                BigDecimal dividend = stock.getDividend().getAnnualYieldPercent();
-                stock.print();
-            }
-            catch(IOException e) {
 
-            }
-        }
 }
 

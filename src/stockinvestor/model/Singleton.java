@@ -7,14 +7,13 @@ import sql.Database;
  */
 public class Singleton {
     private final static Singleton instance = new Singleton();
+    private sql.Database database = new Database();
 
     public static Singleton getInstance() {
         return instance;
     }
-    private sql.Database database = new Database();
-    private StockInfo stockInfo = new StockInfo();
-    public StockInfo currentStockInfo() { return stockInfo;}
-    public void setCurrentStockInfo(StockInfo stockInfo){this.stockInfo = stockInfo;}
+
+
     public sql.Database currentDatabase() {
         return database;
     }

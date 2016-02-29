@@ -11,15 +11,13 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
-import sql.Database;
-import stockinvestor.model.MainScreen;
 import stockinvestor.model.Singleton;
 
 import java.io.File;
 import java.io.IOException;
 
 
-public class newGameController {
+public class NewGameController {
 
     @FXML
     private Label mainmessage;
@@ -35,9 +33,8 @@ public class newGameController {
             Parent root;
             String username = userid.getText();
             stage = (Stage) submit.getScene().getWindow();
-            File newSaveFile = saveGame(username,stage);
-            if(newSaveFile == null)
-            {
+            File newSaveFile = saveGame(username, stage);
+            if (newSaveFile == null) {
                 root = FXMLLoader.load(getClass().getResource("../fxml/MainMenu.fxml"));
                 Scene scene = new Scene(root);
                 stage.setScene(scene);
@@ -46,26 +43,24 @@ public class newGameController {
 
             Singleton.getInstance().currentDatabase().initDatabase(newSaveFile.getAbsolutePath());
             Singleton.getInstance().currentDatabase().createTables();
-            Singleton.getInstance().currentDatabase().insert("'"+username+"',20000","USER");
-            root = FXMLLoader.load(getClass().getResource("../fxml/mainscreen.fxml"));
+            Singleton.getInstance().currentDatabase().insert("'" + username + "',20000", "USER");
+            root = FXMLLoader.load(getClass().getResource("../fxml/MainScreen.fxml"));
             Scene scene = new Scene(root);
             stage.setScene(scene);
             stage.show();
 
-        }
-        catch(NullPointerException e)
-        {
+        } catch (NullPointerException e) {
 
         }
 
     }
-    private File saveGame(String username, Stage stage)
-    {
+
+    private File saveGame(String username, Stage stage) {
         FileChooser fileChooser = new FileChooser();
         fileChooser.setTitle("New Game");
         fileChooser.getExtensionFilters().add(
                 new FileChooser.ExtensionFilter("Database file", "*.db"));
-        fileChooser.setInitialFileName(username+"'s Stock Portfolio - Stock Investor Simulation.db");
+        fileChooser.setInitialFileName(username + "'s Stock Portfolio - Stock Investor Simulation.db");
         File file = fileChooser.showSaveDialog(stage);
         return file;
     }
