@@ -1,28 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6ab0b984-cbd5-4724-87c9-86e696d0fd3b" name="Default" comment="Can now view stocks in the main menu">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/stockinvestor/images/Image-not-found.gif" />
-      <change type="DELETED" beforePath="C:\Users\Nick\IdeaProjects\SISim\LAST_VISITED.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nick\IdeaProjects\SISim\lastPageVisited.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nick\IdeaProjects\SISim\src\stockinvestor\controller\StockInfoController.java" afterPath="" />
-      <change type="MOVED" beforePath="C:\Users\Nick\IdeaProjects\SISim\src\stockinvestor\controller\mainscreenController.java" afterPath="$PROJECT_DIR$/src/stockinvestor/controller/MainScreenController.java" />
-      <change type="MOVED" beforePath="C:\Users\Nick\IdeaProjects\SISim\src\stockinvestor\controller\newGameController.java" afterPath="$PROJECT_DIR$/src/stockinvestor/controller/NewGameController.java" />
-      <change type="MOVED" beforePath="C:\Users\Nick\IdeaProjects\SISim\src\stockinvestor\controller\quoteInfoController.java" afterPath="$PROJECT_DIR$/src/stockinvestor/controller/QuoteInfoController.java" />
-      <change type="MOVED" beforePath="C:\Users\Nick\IdeaProjects\SISim\src\stockinvestor\fxml\mainscreen.fxml" afterPath="$PROJECT_DIR$/src/stockinvestor/fxml/MainScreen.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sql/Database.java" afterPath="$PROJECT_DIR$/src/sql/Database.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/stockinvestor/Main.java" afterPath="$PROJECT_DIR$/src/stockinvestor/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/stockinvestor/controller/MainMenuController.java" afterPath="$PROJECT_DIR$/src/stockinvestor/controller/MainMenuController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/stockinvestor/model/MainScreen.java" afterPath="$PROJECT_DIR$/src/stockinvestor/model/MainScreen.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/stockinvestor/fxml/QuoteInfo.fxml" afterPath="$PROJECT_DIR$/src/stockinvestor/fxml/QuoteInfo.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/stockinvestor/controller/SearchPanelController.java" afterPath="$PROJECT_DIR$/src/stockinvestor/controller/SearchPanelController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/stockinvestor/model/Singleton.java" afterPath="$PROJECT_DIR$/src/stockinvestor/model/Singleton.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/stockinvestor/model/StockInfo.java" afterPath="$PROJECT_DIR$/src/stockinvestor/model/StockInfo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/stockinvestor/model/WebScraper.java" afterPath="$PROJECT_DIR$/src/stockinvestor/model/WebScraper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/stockinvestor/fxml/newgame.fxml" afterPath="$PROJECT_DIR$/src/stockinvestor/fxml/newgame.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stockinvestor.iml" afterPath="$PROJECT_DIR$/stockinvestor.iml" />
+    <list default="true" id="6ab0b984-cbd5-4724-87c9-86e696d0fd3b" name="Default" comment="">
+      <change type="DELETED" beforePath="C:\Users\Nick\IdeaProjects\SISim\.idea\ant.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nick\IdeaProjects\SISim\.idea\artifacts\JavaFXApp.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nick\IdeaProjects\SISim\.idea\compiler.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nick\IdeaProjects\SISim\.idea\copyright\profiles_settings.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nick\IdeaProjects\SISim\.idea\description.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nick\IdeaProjects\SISim\.idea\encodings.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nick\IdeaProjects\SISim\.idea\findbugs-idea.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nick\IdeaProjects\SISim\.idea\gradle.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nick\IdeaProjects\SISim\.idea\libraries\com_yahoofinance_api_YahooFinanceAPI_2_0_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nick\IdeaProjects\SISim\.idea\libraries\jaunt1_1_4.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nick\IdeaProjects\SISim\.idea\libraries\joda_time_joda_time_2_8_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nick\IdeaProjects\SISim\.idea\libraries\junit_junit_4_12.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nick\IdeaProjects\SISim\.idea\libraries\sqlite_jdbc_3_8_11_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nick\IdeaProjects\SISim\.idea\misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nick\IdeaProjects\SISim\.idea\modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nick\IdeaProjects\SISim\.idea\scopes\scope_settings.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nick\IdeaProjects\SISim\.idea\uiDesigner.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nick\IdeaProjects\SISim\.idea\vcs.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nick\IdeaProjects\SISim\.idea\workspace.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nick\IdeaProjects\SISim\out\production\stockinvestor\sql\Database.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nick\IdeaProjects\SISim\out\production\stockinvestor\stockinvestor\Main.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nick\IdeaProjects\SISim\out\production\stockinvestor\stockinvestor\controller\MainMenuController.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nick\IdeaProjects\SISim\out\production\stockinvestor\stockinvestor\controller\MainScreenController$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nick\IdeaProjects\SISim\out\production\stockinvestor\stockinvestor\controller\MainScreenController$2.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nick\IdeaProjects\SISim\out\production\stockinvestor\stockinvestor\controller\MainScreenController$3.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nick\IdeaProjects\SISim\out\production\stockinvestor\stockinvestor\controller\MainScreenController$4.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nick\IdeaProjects\SISim\out\production\stockinvestor\stockinvestor\controller\MainScreenController.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nick\IdeaProjects\SISim\out\production\stockinvestor\stockinvestor\controller\NewGameController.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nick\IdeaProjects\SISim\out\production\stockinvestor\stockinvestor\controller\QuoteInfoController$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nick\IdeaProjects\SISim\out\production\stockinvestor\stockinvestor\controller\QuoteInfoController.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nick\IdeaProjects\SISim\out\production\stockinvestor\stockinvestor\controller\SearchPanelController$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nick\IdeaProjects\SISim\out\production\stockinvestor\stockinvestor\controller\SearchPanelController.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nick\IdeaProjects\SISim\out\production\stockinvestor\stockinvestor\css\MainMenu.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nick\IdeaProjects\SISim\out\production\stockinvestor\stockinvestor\css\QuoteInfo.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nick\IdeaProjects\SISim\out\production\stockinvestor\stockinvestor\css\mainscreen.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nick\IdeaProjects\SISim\out\production\stockinvestor\stockinvestor\fxml\MainMenu.fxml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nick\IdeaProjects\SISim\out\production\stockinvestor\stockinvestor\fxml\MainScreen.fxml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nick\IdeaProjects\SISim\out\production\stockinvestor\stockinvestor\fxml\QuoteInfo.fxml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nick\IdeaProjects\SISim\out\production\stockinvestor\stockinvestor\fxml\SearchPanel.fxml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nick\IdeaProjects\SISim\out\production\stockinvestor\stockinvestor\fxml\newgame.fxml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nick\IdeaProjects\SISim\out\production\stockinvestor\stockinvestor\images\Image-not-found.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nick\IdeaProjects\SISim\out\production\stockinvestor\stockinvestor\images\bloomberg.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nick\IdeaProjects\SISim\out\production\stockinvestor\stockinvestor\images\jpx.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nick\IdeaProjects\SISim\out\production\stockinvestor\stockinvestor\images\lse.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nick\IdeaProjects\SISim\out\production\stockinvestor\stockinvestor\images\nyse.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nick\IdeaProjects\SISim\out\production\stockinvestor\stockinvestor\model\MainScreen.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nick\IdeaProjects\SISim\out\production\stockinvestor\stockinvestor\model\Singleton.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nick\IdeaProjects\SISim\out\production\stockinvestor\stockinvestor\model\StockInfo.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nick\IdeaProjects\SISim\out\production\stockinvestor\stockinvestor\model\WebScraper.class" afterPath="" />
     </list>
     <ignored path="SISim.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -49,7 +77,7 @@
         <entry file="file://$PROJECT_DIR$/src/stockinvestor/controller/SearchPanelController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="58" column="47" selection-start-line="58" selection-start-column="47" selection-end-line="58" selection-end-column="47" />
+              <caret line="58" column="36" selection-start-line="58" selection-start-column="36" selection-end-line="58" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1791#1812#0" expanded="true" />
@@ -58,56 +86,41 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Singleton.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/stockinvestor/model/Singleton.java">
+      <file leaf-file-name="MainMenuController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/stockinvestor/controller/MainMenuController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
+              <caret line="54" column="0" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="QuoteInfoController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/stockinvestor/controller/QuoteInfoController.java">
+      <file leaf-file-name="quoteInfoController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/stockinvestor/controller/quoteInfoController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.3965516">
-              <caret line="60" column="39" selection-start-line="60" selection-start-column="39" selection-end-line="60" selection-end-column="39" />
-              <folding>
-                <element signature="e#1009#1010#0" expanded="true" />
-                <element signature="e#1085#1086#0" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="0.0">
+              <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WebScraper.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="WebScraper.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/stockinvestor/model/WebScraper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5743243">
+            <state vertical-scroll-proportion="0.0">
               <caret line="39" column="24" selection-start-line="39" selection-start-column="24" selection-end-line="39" selection-end-column="24" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainScreenController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/stockinvestor/controller/MainScreenController.java">
+      <file leaf-file-name="mainscreen.fxml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/stockinvestor/fxml/mainscreen.fxml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="101" column="24" selection-start-line="101" selection-start-column="24" selection-end-line="101" selection-end-column="24" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MainScreen.fxml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/stockinvestor/fxml/MainScreen.fxml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.6551723">
-              <caret line="61" column="12" selection-start-line="61" selection-start-column="12" selection-end-line="61" selection-end-column="12" />
+            <state vertical-scroll-proportion="-11.724138">
+              <caret line="29" column="70" selection-start-line="29" selection-start-column="70" selection-end-line="29" selection-end-column="70" />
               <folding />
             </state>
           </provider>
@@ -116,24 +129,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Database.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sql/Database.java">
+      <file leaf-file-name="newGameController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/stockinvestor/controller/newGameController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="173" column="12" selection-start-line="173" selection-start-column="12" selection-end-line="173" selection-end-column="12" />
-              <folding>
-                <marker date="1456697064032" expanded="true" signature="738:886" placeholder="CREATE TABLE..IF..." />
-                <marker date="1456697064032" expanded="true" signature="913:1198" placeholder="CREATE TABLE..IF..." />
-                <marker date="1456697064032" expanded="true" signature="1225:1497" placeholder="CREATE TABLE..IF..." />
-                <marker date="1456697064032" expanded="true" signature="1896:1961" placeholder="INSERT INTO'..." />
-                <marker date="1456697064032" expanded="true" signature="2367:2388" placeholder="SELECT NAME ..USER..." />
-                <marker date="1456697064032" expanded="true" signature="2893:2914" placeholder="SELECT CASH ..USER..." />
-                <marker date="1456697064032" expanded="true" signature="3400:3432" placeholder="UPDATE USER ..." />
-                <marker date="1456697064032" expanded="true" signature="3850:3912" placeholder="SELECT QUANT..PORTFOLIO..." />
-                <marker date="1456697064032" expanded="true" signature="4447:4523" placeholder="UPDATE PORTF..." />
-                <marker date="1456697064032" expanded="true" signature="4974:5034" placeholder="SELECT * FRO..PORTFOLIO..." />
-                <marker date="1456697064032" expanded="true" signature="5504:5527" placeholder="SELECT * FRO..PORTFOLIO..." />
-              </folding>
+              <caret line="19" column="14" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -164,6 +165,31 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="newgame.fxml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/stockinvestor/fxml/newgame.fxml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.26748252">
+              <caret line="9" column="51" selection-start-line="9" selection-start-column="51" selection-end-line="9" selection-end-column="51" />
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="JavaFX-Scene-Builder">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mainscreenController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/stockinvestor/controller/mainscreenController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="Git.Settings">
@@ -183,9 +209,14 @@
         <option value="$PROJECT_DIR$/src/stockinvestor/fxml/MainScreen.fxml" />
         <option value="$PROJECT_DIR$/src/stockinvestor/controller/MainScreenController.java" />
         <option value="$PROJECT_DIR$/src/stockinvestor/fxml/QuoteInfo.fxml" />
-        <option value="$PROJECT_DIR$/src/stockinvestor/controller/SearchPanelController.java" />
         <option value="$PROJECT_DIR$/src/stockinvestor/model/WebScraper.java" />
         <option value="$PROJECT_DIR$/src/stockinvestor/controller/QuoteInfoController.java" />
+        <option value="$PROJECT_DIR$/src/stockinvestor/controller/newGameController.java" />
+        <option value="$PROJECT_DIR$/src/stockinvestor/controller/quoteInfoController.java" />
+        <option value="$PROJECT_DIR$/src/stockinvestor/controller/mainscreenController.java" />
+        <option value="$PROJECT_DIR$/src/stockinvestor/controller/SearchPanelController.java" />
+        <option value="$PROJECT_DIR$/src/stockinvestor/fxml/mainscreen.fxml" />
+        <option value="$PROJECT_DIR$/src/stockinvestor/fxml/newgame.fxml" />
       </list>
     </option>
   </component>
@@ -204,10 +235,9 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="x" value="-4" />
+    <option name="width" value="1555" />
+    <option name="height" value="985" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -232,7 +262,7 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -378,7 +408,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -685,29 +715,37 @@
       <updated>1456691837002</updated>
       <workItem from="1456691837629" duration="676000" />
       <workItem from="1456692752500" duration="22415000" />
+      <workItem from="1456716563849" duration="389000" />
     </task>
+    <task id="LOCAL-00001" summary="renamed files">
+      <created>1456716909062</created>
+      <option name="number" value="00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1456716909062</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23091000" />
+    <option name="totallyTimeSpent" value="23480000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="false" />
+    <frame x="-4" y="0" width="1555" height="985" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="FindBugs-IDEA" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32900432" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3282532" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17424242" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26260257" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25426438" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18528429" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -727,7 +765,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Can now view stocks in the main menu" />
-    <option name="LAST_COMMIT_MESSAGE" value="Can now view stocks in the main menu" />
+    <MESSAGE value="renamed files" />
+    <option name="LAST_COMMIT_MESSAGE" value="renamed files" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -740,13 +779,96 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/stockinvestor/controller/SearchPanelController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="58" column="47" selection-start-line="58" selection-start-column="47" selection-end-line="58" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1791#1812#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/stockinvestor/model/Singleton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/stockinvestor/controller/quoteInfoController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="60" column="39" selection-start-line="60" selection-start-column="39" selection-end-line="60" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/stockinvestor/model/WebScraper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/stockinvestor/controller/mainscreenController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="101" column="24" selection-start-line="101" selection-start-column="24" selection-end-line="101" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/stockinvestor/fxml/mainscreen.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="61" column="12" selection-start-line="61" selection-start-column="12" selection-end-line="61" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sql/Database.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="173" column="12" selection-start-line="173" selection-start-column="12" selection-end-line="173" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/stockinvestor/fxml/QuoteInfo.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="112" selection-start-line="9" selection-start-column="112" selection-end-line="9" selection-end-column="112" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/stockinvestor/fxml/SearchPanel.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/stockinvestor/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding>
-            <marker date="1456693021550" expanded="false" signature="-1:-1" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -765,25 +887,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding>
-            <marker date="1456693021550" expanded="false" signature="-1:-1" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/stockinvestor/images/bloomberg.png">
       <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/stockinvestor/fxml/newgame.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
         <state />
       </provider>
     </entry>
@@ -795,19 +903,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/stockinvestor/controller/NewGameController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_74/javafx-src.zip!/com/sun/javafx/event/EventDispatchChainImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.12517007">
           <caret line="113" column="0" selection-start-line="113" selection-start-column="0" selection-end-line="113" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -819,10 +918,79 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/stockinvestor/fxml/MainScreen.fxml">
+    <entry file="file://$PROJECT_DIR$/src/sql/Database.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.6551723">
-          <caret line="61" column="12" selection-start-line="61" selection-start-column="12" selection-end-line="61" selection-end-column="12" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="173" column="12" selection-start-line="173" selection-start-column="12" selection-end-line="173" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/stockinvestor/model/Singleton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/stockinvestor/model/WebScraper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="39" column="24" selection-start-line="39" selection-start-column="24" selection-end-line="39" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/stockinvestor/controller/newGameController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="14" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/stockinvestor/controller/quoteInfoController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/stockinvestor/controller/mainscreenController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/stockinvestor/controller/SearchPanelController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="58" column="36" selection-start-line="58" selection-start-column="36" selection-end-line="58" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1791#1812#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/stockinvestor/controller/MainMenuController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="54" column="0" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/stockinvestor/fxml/mainscreen.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.724138">
+          <caret line="29" column="70" selection-start-line="29" selection-start-column="70" selection-end-line="29" selection-end-column="70" />
           <folding />
         </state>
       </provider>
@@ -852,72 +1020,15 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sql/Database.java">
+    <entry file="file://$PROJECT_DIR$/src/stockinvestor/fxml/newgame.fxml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="173" column="12" selection-start-line="173" selection-start-column="12" selection-end-line="173" selection-end-column="12" />
-          <folding>
-            <marker date="1456697064032" expanded="true" signature="738:886" placeholder="CREATE TABLE..IF..." />
-            <marker date="1456697064032" expanded="true" signature="913:1198" placeholder="CREATE TABLE..IF..." />
-            <marker date="1456697064032" expanded="true" signature="1225:1497" placeholder="CREATE TABLE..IF..." />
-            <marker date="1456697064032" expanded="true" signature="1896:1961" placeholder="INSERT INTO'..." />
-            <marker date="1456697064032" expanded="true" signature="2367:2388" placeholder="SELECT NAME ..USER..." />
-            <marker date="1456697064032" expanded="true" signature="2893:2914" placeholder="SELECT CASH ..USER..." />
-            <marker date="1456697064032" expanded="true" signature="3400:3432" placeholder="UPDATE USER ..." />
-            <marker date="1456697064032" expanded="true" signature="3850:3912" placeholder="SELECT QUANT..PORTFOLIO..." />
-            <marker date="1456697064032" expanded="true" signature="4447:4523" placeholder="UPDATE PORTF..." />
-            <marker date="1456697064032" expanded="true" signature="4974:5034" placeholder="SELECT * FRO..PORTFOLIO..." />
-            <marker date="1456697064032" expanded="true" signature="5504:5527" placeholder="SELECT * FRO..PORTFOLIO..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/stockinvestor/controller/MainScreenController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="101" column="24" selection-start-line="101" selection-start-column="24" selection-end-line="101" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/stockinvestor/model/Singleton.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
+        <state vertical-scroll-proportion="0.26748252">
+          <caret line="9" column="51" selection-start-line="9" selection-start-column="51" selection-end-line="9" selection-end-column="51" />
           <folding />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/stockinvestor/controller/SearchPanelController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="58" column="47" selection-start-line="58" selection-start-column="47" selection-end-line="58" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1791#1812#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/stockinvestor/controller/QuoteInfoController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.3965516">
-          <caret line="60" column="39" selection-start-line="60" selection-start-column="39" selection-end-line="60" selection-end-column="39" />
-          <folding>
-            <element signature="e#1009#1010#0" expanded="true" />
-            <element signature="e#1085#1086#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/stockinvestor/model/WebScraper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5743243">
-          <caret line="39" column="24" selection-start-line="39" selection-start-column="24" selection-end-line="39" selection-end-column="24" />
-          <folding />
-        </state>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
       </provider>
     </entry>
   </component>
